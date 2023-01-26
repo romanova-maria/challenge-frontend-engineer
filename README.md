@@ -21,11 +21,11 @@ This is how this could look like:
 <img src="./mock-2.png" style="width:100%;background-color:white;" />
 
 
-Remember these are only mockups. At parcelLab we expect from our frontend engineers to have a feeling for good UI/UX and give them the freedom of creation. You can design these views as you would like. (Also the map is just a bonus...) You can style it as you wish and make use of the data that you see in the order.json file!
+Remember these are only mockups. At parcelLab we expect from our frontend engineers to have a feeling for good UI/UX and give them the freedom of creation. You can design these views as you would like. Make sure to make use of the data that you see in the order.json file! What makes sense to show to the user?
 
 
 ## Our Expectations
-You might be wondering after reading the scenario, how much effort and time we expect you to invest in this task. We know that you likely have a job, a life (I mean you are not a backend developer afterall), further open job applications and other things that require some of your valuable time. Therefore you should not spend more than 4 hours on this task.  
+You might be wondering after reading the scenario, how much effort and time we expect you to invest in this task. We know that you likely have a job, a life (I mean you are not a backend developer afterall), further open job applications and other things that require some of your valuable time. Therefore we do not expect you to spend more than around 4 hours on this task.  
 
 Just for you to have a understanding about the scope we expect, here a list for each level you might be applying for:
 
