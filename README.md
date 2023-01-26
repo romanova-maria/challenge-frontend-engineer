@@ -7,9 +7,9 @@ Take your time and read this Markdown parchment carefully, it will help you navi
 <img src="./banner.jpg" />
 At parcelLab we build tools that integrate with the worlds best online retailers and are used by millions of people - every day! That is why we are really into creating outstanding user experiences.
 
-In this scenario, you are Frontend Engineer at parcelLab and you start working on a new project of building a web app that displays the order status and the shipping information for orders. Because your fellow backend developer colleague is late with his part (again 🙄) you will need to mock an api that returns one order from a list of orders ```orders.json``` based on the user's input and display it in a appealing way.  
+In this scenario, you are Frontend Engineer at parcelLab and you start working on a new project of building a web app that displays the order status and the shipping information for orders. Because your fellow backend developer colleague is late with his part, you will need to mock an api that returns one order from a list of orders ```orders.json``` based on the user's input and display it in a appealing way.  
 
-The api that you mock will be (when finished) hosted on ```https://api.prcl.dev``` and the endpoints URL will look something like that: ```/orders/{{orderNumber}}?zip={{zipCode}}```. You can use a tool like e.g. [nock](https://github.com/nock/nock) for mocking the api.  
+The api that you mock will be (when finished) hosted on ```https://api.prcl.dev``` and the endpoints URL will look something like that: ```/orders/{{orderNumber}}?zip={{zipCode}}```. You can use any tool you like for mocking the api.  
 
 The app should have 2 views:
 1. Sign In / User Input view - here the user can input an order number and a zip code (for verification - so that it is not possible to get access to order information without knowing the zip code of it) and a submit button. If the entered order number does not exist in the DB (orders.json) or the zip code does not match, you can show a error here as a notification or on a new page. Your choice.
@@ -25,7 +25,7 @@ Remember these are only mockups. At parcelLab we expect from our frontend engine
 
 
 ## Our Expectations
-You might be wondering after reading the scenario, how much effort and time we expect you to invest in this task. We know that you likely have a job, a life (I mean you are not a backend developer afterall), further open job applications and other things that require some of your valuable time. Therefore we do not expect you to spend more than around 4 hours on this task.  
+You might be wondering after reading the scenario, how much effort and time we expect you to invest in this task. We know that you likely have a job, a life, further open job applications and other things that require some of your valuable time. Therefore we do not expect you to spend more than around 4 hours on this task.  
 
 Just for you to have a understanding about the scope we expect, here a list for each level you might be applying for:
 
@@ -74,7 +74,7 @@ If you open the `orders.json` file you will see it contains multiple entries wit
 - `destination_country_iso3` - 3 char code of the recpients country
 - `zip_code` - zip code of the recipient - should be used in combindation with order number as verification
 
-There is even more data available. Just have a look into orders.json and think of how you can display it in a nice way.
+There is even more data available. Just have a look into orders.json and think of how and what you can display to the user.
 
 ## What you will need
 For setting up the web app you can just set up a standard React project (with e.g. CRA or any other tooling). You can use any module, design system or state management you like and structure the application in your favor.
