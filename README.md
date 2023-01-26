@@ -4,7 +4,7 @@ Welcome to the lost Repository of Frontend. You came a long way - join me around
 Take your time and read this Markdown parchment carefully, it will help you navigate around the dangers of this task.
 
 ## The Quest
-<img src="./banner.jpg" />
+<img src="./banner.jpg"  />
 At parcelLab we build tools that integrate with the worlds best online retailers and are used by millions of people - every day! That is why we are really into creating outstanding user experiences.
 
 In this scenario, you are Frontend Engineer at parcelLab and you start working on a new project of building a web app that displays the order status and the shipping information for orders. Because your fellow backend developer colleague is late with his part, you will need to mock an api that returns one order from a list of orders ```orders.json``` based on the user's input and display it in a appealing way.  
