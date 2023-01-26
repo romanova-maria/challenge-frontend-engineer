@@ -17,9 +17,11 @@ The app should have 2 views:
 
 This is how this could look like:
 
+<img src="./mock-1.png" style="width:100%;background-color:white;margin-bottom:15px;" />
+<img src="./mock-2.png" style="width:100%;background-color:white;" />
 
 
-Remember these are only mockups. At parcelLab we expect from our frontend engineers to have a feeling for good UI/UX and give them the freedom of creation. You can design these views as you would like.  
+Remember these are only mockups. At parcelLab we expect from our frontend engineers to have a feeling for good UI/UX and give them the freedom of creation. You can design these views as you would like. (Also the map is just a bonus...) You can style it as you wish and make use of the data that you see in the order.json file!
 
 
 ## Our Expectations
@@ -61,9 +63,17 @@ This file represents a subset of an orders DB with orders of different customers
 
 If you open the `orders.json` file you will see it contains multiple entries with following properties:
 
-- `orderNo` - the order number of one of the orders that Julian submitted
-- `tracking_number` - the courier tracking number that is used to ship the order to the recipient
-- `courier` - the name of the courier that fulfils the shipment
+- `_id` - order id from the db
+- `courier` - courier code that is delivering this order package
+- `created` - db record creating date
+- `updated` - db record last update date
+- `updated` - db record last update date
+- `checkpoints` - list of checkpoints from the shippment process - tip: can include a `meta` field with further information about the shippment status / location
+- `delivery_info` - object with order detail data like recipient infos and `articles` list
+- `delivery_info.announced_delivery_date` - first estimation of the delivery date made by the sender
+- `destination_country_iso3` - 3 char code of the recpients country
+- `zip_code` - zip code of the recipient - should be used in combindation with order number as verification
+
 
 ## What you will need
 For setting up the web app you can just set up a standard React project (with e.g. CRA or any other tooling). You can use any module, design system or state management you like and structure the application in your favor.
