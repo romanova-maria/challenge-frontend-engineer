@@ -1,67 +1,86 @@
-# Project's Title
+# parcelLab Frontend Engineer Quest
+<img src="./fire.gif" />
+Welcome to the lost Repository of Frontend. You came a long way - join me around this campfire gif, make yourself a coffee and relax a bit - before you start your quest becoming a Frontend Engineer at parcelLab.
+Take your time and read this Markdown parchment carefully, it will help you navigate around the dangers of this task.
 
-<!---
-This is the name of the project. It describes the whole project in one sentence, and helps people understand what the main goal and aim of the project is.
+## The Quest
+<img src="./banner.jpg" />
+At parcelLab we build tools that integrate with the worlds best online retailers and are used by millions of people - every day! That is why we are really into creating outstanding user experiences.
 
-Consider putting a CI badge too, for instance:
- [![myworkflow](https://github.com/parcellab/repo-template-base/workflows/myworkflow/badge.svg)](https://github.com/parcellab/repo-template-base/actions?workflow=myworkflow)
--->
+In this scenario, you are Frontend Engineer at parcelLab and you start working on a new project of building a web app that displays the order status and the shipping information for orders. Because your fellow backend developer colleague is late with his part (again 🙄) you will need to mock an api that returns one order from a list of orders ```orders.json``` based on the user's input and display it in a appealing way.  
 
-## Table of Contents (Optional)
+The api that you mock will be (when finished) hosted on ```https://api.prcl.dev``` and the endpoints URL will look something like that: ```/orders/{{orderNumber}}?zip={{zipCode}}```. You can use a tool like e.g. [nock](https://github.com/nock/nock) for mocking the api.  
 
-<!---
-If your README is very long, you might want to add a table of contents to make it easy for users to navigate to different sections easily. It will make it easier for readers to move around the project with ease.
--->
+The app should have 2 views:
+1. Sign In / User Input view - here the user can input an order number and a zip code (for verification - so that it is not possible to get access to order information without knowing the zip code of it) and a submit button. If the entered order number does not exist in the DB (orders.json) or the zip code does not match, you can show a error here as a notification or on a new page. Your choice.
+2. Order View - after the user typed in a valid order number that exists in the DB, user will land on this page. It should view the order details and the shipping (in parcelLab lang "tracking") information.
 
-## About The Project
+This is how this could look like:
 
-<!---
-This is an important component of your project that many new developers often overlook.
 
-Your description is an extremely important aspect of your project. A well-crafted description allows you to show off your work to other developers as well as potential employers.
 
-The quality of a README description often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase:
-- What your application does,
-- Why you used the technologies you used,
-- Some of the challenges you faced and features you hope to implement in the future.
--->
+Remember these are only mockups. At parcelLab we expect from our frontend engineers to have a feeling for good UI/UX and give them the freedom of creation. You can design these views as you would like.  
 
-## Installation
 
-<!---If you are working on a project that a user needs to install or run locally in a machine,
-you should include the steps required to install your project and also the required dependencies if any.*
+## Our Expectations
+You might be wondering after reading the scenario, how much effort and time we expect you to invest in this task. We know that you likely have a job, a life (I mean you are not a backend developer afterall), further open job applications and other things that require some of your valuable time. Therefore you should not spend more than 4 hours on this task.  
 
-Provide a step-by-step description of how to get the development environment set and running.
-For instance:
+Just for you to have a understanding about the scope we expect, here a list for each level you might be applying for:
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+### Junior Developer:
+- your application works without the need of modifications
+- you use Javascript OR Typescript + React
+- someone looking at the code knows what you tried to accomplish because you stick with the "Clean Code" principles
 
-```bash
-pip install foobar
-```
--->
+### Midlevel Developer:
+- all of the above plus:
+- you use Typescript
+- your UI is looking clean
+- you show your react hooks skills
+- the code base is "Clean Code" by the book
 
-## Usage
+### Senior Developer:
+- all of the above plus:
+- your UI is following best UX practices
+- show us your Testing knowledge
+- your Typescript have all the correct Typings and you do not use things like "any"
 
-<!---
-Provide instructions and examples so users/contributors can use the project. This will make it easy for them in case they encounter a problem – they will always have a place to reference what is expected.*
+### Want to earn some bonus points:
+- you care about accessibility
 
-*You can also make use of visual aids by including materials like screenshots to show examples of the running project and also the structure and design principles used in your project.
+<img src="./banner2.jpg" />
 
-```python
-import foobar
+## Data Source
+> ☝ Please do **not** edit the content of the file. It's up to you, how you want to mock the required api endpoint.
 
-# returns 'words'
-foobar.pluralize('word')
+- [data/orders.json](./data/orders.json)
 
-# returns 'geese'
-foobar.pluralize('goose')
+### orders.json
+This file represents a subset of an orders DB with orders of different customers. Each order contains information that you  can use to display in the UI.  
+> ⚠️ not all attributes can be filled with data - make sure to handle this scenario.
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
--->
+If you open the `orders.json` file you will see it contains multiple entries with following properties:
 
-## Contributing
+- `orderNo` - the order number of one of the orders that Julian submitted
+- `tracking_number` - the courier tracking number that is used to ship the order to the recipient
+- `courier` - the name of the courier that fulfils the shipment
 
-[Contribution guidelines](CONTRIBUTING.md)
+## What you will need
+For setting up the web app you can just set up a standard React project (with e.g. CRA or any other tooling). You can use any module, design system or state management you like and structure the application in your favor.
+
+You can simple clone this repository and send us a link to your fork.  
+
+## In the end you should have
+- [ ]  a mocked api endpoint so that you can create the data fetching logic
+- [ ]  web app that has 2 or 3 views
+    - [ ]  input / signin form
+    - [ ]  order detail view
+    - [ ]  error page - optional (depends how you want to display errors)
+
+
+## What really makes us happy 😍
+- [ ]  You provide us with a README.md that explains how we can run your app
+- [ ]  Your code is well structured, clean and readable
+- [ ]  You add comments and documentation, if your code isn't self-explanatory
+- [ ]  You handle any common errors that could occur
+- [ ]  You use automated tests where appropriate
