@@ -74,6 +74,7 @@ If you open the `orders.json` file you will see it contains multiple entries wit
 - `destination_country_iso3` - 3 char code of the recpients country
 - `zip_code` - zip code of the recipient - should be used in combindation with order number as verification
 
+There is even more data available. Just have a look into orders.json and think of how you can display it in a nice way.
 
 ## What you will need
 For setting up the web app you can just set up a standard React project (with e.g. CRA or any other tooling). You can use any module, design system or state management you like and structure the application in your favor.
